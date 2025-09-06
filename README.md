@@ -1,4 +1,4 @@
-# 🚀 Load Testing Demo with Locust, Prometheus & Grafana
+# Load Testing Demo with Locust, Prometheus & Grafana
 
 This project demonstrates how to set up a **load testing and monitoring stack** using:
 
@@ -20,7 +20,6 @@ server/
 ├── docker-compose.yml  # Combined setup (exporter, Prometheus, Grafana)
 ├── poetry.lock         # Dependency lock file (Poetry)
 ├── pyproject.toml      # Python project dependencies
-└── __pycache__/        # Cache directory
 ```
 
 ---
@@ -33,7 +32,7 @@ server/
 
 ---
 
-## ▶️ Getting Started
+## ▶Getting Started
 
 ### 1. Move into the project folder
 
@@ -108,7 +107,7 @@ In Grafana:
 
 ---
 
-## ✅ What You’ll Learn
+##  What You’ll Learn
 
 - How to simulate user traffic against a Python web app
 - How to expose Locust metrics in Prometheus format
