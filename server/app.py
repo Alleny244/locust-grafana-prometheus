@@ -1,6 +1,6 @@
 # app.py
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import JSONResponse
 import random
 import asyncio
 import asyncio.locks
@@ -11,34 +11,9 @@ active_requests = 0
 lock = asyncio.Lock()
 
 
-@app.get("/", response_class=HTMLResponse)
-async def home():
-    return """
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Demo App</title>
-    </head>
-    <body>
-        <h1>Load Testing Demo</h1>
-        <button onclick="fetchData()">Fetch Data</button>
-        <div id="counter" style="margin-top: 10px; font-weight: bold;"></div>
-        <div id="output" style="margin-top: 20px; font-size: 18px; color: blue;"></div>
-
-        <script>
-            let count = 0;
-            async function fetchData() {
-                count++;
-                document.getElementById("counter").innerText = "Requests made: " + count;
-
-                const res = await fetch("/api/data");
-                const data = await res.json();
-                document.getElementById("output").innerText =data.message + " " + data.delay
-            }
-        </script>
-    </body>
-    </html>
-    """
+@app.get("/")
+def home():
+    return "Home"
 
 
 @app.get("/api/data")
