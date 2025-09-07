@@ -8,6 +8,9 @@ This project demonstrates how to set up a **load testing and monitoring stack** 
 - **Prometheus** → collect & store metrics
 - **Grafana** → visualize performance trends
 
+I also wrote a detailed article explaining this setup step by step on Medium:<br>
+[From Stress to Success: Load Testing Python Apps & Visualizing Performance](https://medium.com/@alleny244/from-stress-to-success-load-testing-python-apps-visualizing-performance-83ea4ff16c6c)
+
 ---
 
 ## 📂 Project Structure
